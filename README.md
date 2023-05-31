@@ -25,3 +25,7 @@ public void BFS(Vertex start) {
 ```
 BFS is a graph method to traverse. Unlike DFS, it traverses level by level, so we need another approach to solve the problem. My BFS method takes Vertex start as a starting
 vertex and right off the bat validates it. Then I use HashMap to check whether each vertex has been visited or not. We use queue to keep track of visited Vertices. 
+```
+Map<Vertex, Boolean> visited = new HashMap<>();
+```
+visited is used to keep track of visited vertices, it is a hashmap and whether we encounter a visited vertex, we just ignore it.
